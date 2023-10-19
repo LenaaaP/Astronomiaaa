@@ -1,0 +1,114 @@
+h1{
+    color:#f5e8cc;
+    text-align: center;
+    font-size: 60;
+}
+p{
+    color:#2d48b2;
+    font-size: 35;
+}
+body{
+    background-color: #2e3175;
+}
+.w{
+  color:rgb(139, 184, 209)
+}
+a:hover{
+  background-color:#bfc5db;
+}
+img{
+    height: 300px;
+    width: 400px;
+}
+a{
+    text-decoration: none;
+    border: 3px solid #f5e8cc;
+    background-color: #2d48b2;
+    color:#f5e8cc;
+    padding: 20px;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 20;
+    display: flex;
+}
+header{
+    height: 20%;
+    background-color: #2d48b2;
+    margin: 10px;
+    text-align: center;
+}
+main{
+    height: 70%;
+    background-color: #2d48b2;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    justify-self: space-around;
+    height: 10%;
+    background-color: #2d48b2;
+    margin: 10px;
+}
+p1{
+    font-size: 30;
+    color: #FFF5E0;
+}
+nav{
+    display: flex;
+    justify-self: space-around;
+    text-decoration: none;
+    outline: none;
+    transition: .4s ease-in-out;
+  }
+  .topmenu {
+    backface-visibility: hidden;
+    background: #2d48b2;
+  }
+  .topmenu > li {
+    display: inline-flex;
+    position: relative;
+}
+.topmenu > li > a {
+    font-family: 'Exo 2', sans-serif;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: bold;
+    color: #FFF5E0;
+    text-transform: uppercase;
+  }
+  .down:after {
+    content: "\f107";
+    margin-left: 8px;
+    font-family: FontAwesome;
+  }
+  .topmenu li a:hover { color: #f5e8cc; }
+  .submenu {
+    background: #2d48b2;
+    border: 2px solid #f5e8cc;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 160px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+  }
+  .topmenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+  /*внутри каталога*/
+  .submenu li a {
+    color: #f5e8cc;
+    font-size: 13px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: 'Kurale', serif;
+  }

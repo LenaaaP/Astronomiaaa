@@ -1,0 +1,110 @@
+h1{
+    color:#0665d1;
+    text-align: center;
+    font-size: 60;
+}
+p{
+    color:#FFF5E0;
+    font-size: 35;
+}
+.w{
+  color:rgb(57, 186, 255)
+}
+body{
+    background-color: #0d1c58;
+}
+a:hover{
+  background-color: rgb(164, 213, 250);
+}
+img{
+    height: 300px;
+    width: 400px;
+}
+a{
+    text-decoration: none;
+    border: 3px solid #0665d1;
+    background-color: #FFF5E0;
+    color:#0665d1;
+    padding: 20px;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 20;
+    display: flex;
+}
+header{
+    height: 20%;
+    background-color: #FFF5E0;
+    margin: 10px;
+    text-align: center;
+}
+main{
+    height: 70%;
+    background-color: #FFF5E0;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    justify-self: space-around;
+    height: 10%;
+    background-color: #FFF5E0;
+    margin: 10px;
+}
+nav{
+    display: flex;
+    justify-self: space-around;
+    text-decoration: none;
+    outline: none;
+    transition: .4s ease-in-out;
+  }
+  .topmenu {
+    backface-visibility: hidden;
+    background: #FFF5E0;
+  }
+  .topmenu > li {
+    display: inline-flex;
+    position: relative;
+}
+.topmenu > li > a {
+    font-family: 'Exo 2', sans-serif;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: bold;
+    color: #0665d1;
+    text-transform: uppercase;
+  }
+  .down:after {
+    content: "\f107";
+    margin-left: 8px;
+    font-family: FontAwesome;
+  }
+  .topmenu li a:hover { color: #0665d1; }
+  .submenu {
+    background: #FFF5E0;
+    border: 2px solid #0665d1;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 160px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+  }
+  .topmenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+  /*внутри каталога*/
+  .submenu li a {
+    color: #0665d1;
+    font-size: 13px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: 'Kurale', serif;
+  }
